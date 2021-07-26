@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabil Poribohhon</title>
+</head>
+
+<body>
+    <h1>Nabil Poribohon</h1>
+
+    <form action="/" method="post">
+        <label for="cusName">Your Name</label>
+        <input type="text" name="cusName" id="cusName" required>
+        <label for="ticketsNumber">Tickets</label>
+        <input type="number" name="ticketsNumber" id="ticketsNumber" required>
+        <button type="submit">SUBMIT</button>
+    </form>
+
+
+    <div>
+        <p>
+            <span> Name </span>
+            <span> Tickets </span>
+            <span> Cost </span>
+        </p>
+        <% dbMainData.forEach(dbDatas => { %>
+            <p>
+                <span> <%= dbDatas.name %> </span>
+                <span> <%= dbDatas.tickets %> </span>
+                <span> <%= dbDatas.cost %> </span>
+            </p>
+            <% }) %>
+    </div>
+
+</body>
+
+</html>
