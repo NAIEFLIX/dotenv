@@ -6,7 +6,7 @@ app.use(express.urlencoded({
     extended: false
 }));
 
-const dbUrl = process.env.DATABASE_URL || "mongodb://localhost/nabil";
+const dbUrl = "mongodb+srv://Dotenv:c1lV1hdec67NExaf@cluster0.29fvl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
